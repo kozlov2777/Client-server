@@ -11,10 +11,7 @@ def check_record_access(record_id):
 
 # Функція для передачі записів клієнту
 def send_records(client_socket):
-    # Ваш код для отримання записів з бази даних і передачі клієнту
-    # Використовуйте `client_socket.send()` для передачі даних
-
-    # Приклад передачі даних:
+    # Передача даних:
     records = ["Запис 1", "Запис 2", "Запис 3"]
     data = "\n".join(records)
     client_socket.send(data.encode())
